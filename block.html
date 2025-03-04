@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Властивість display та box-sizing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .block {
+            display: block;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            border: 5px solid blue;
+            padding: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: lightcoral;
+            padding: 10px;
+            border: 2px solid red;
+            margin: 5px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgray;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .flex-item {
+            width: 100px;
+            height: 50px;
+            background-color: lightgreen;
+            border: 2px solid green;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <pre> 
+            <a href="index.html"> Демонстрація div і span </a>
+            <a href="normalize.html" > Normalize CSS  </a>
+            <a href="reset.html"> Reset CSS </a>
+            <a href="block.html"> Властивість display та box-sizing </a>
+            <a href="float.html"> Обтікання тексту </a>
+            <a href="overflоat.html" > Контейнер з overflow  </a>
+            <a href="flex.html" > Позиціонування елементів  </a>
+          </pre>
+    </div>
+    <span class="inline">Інлайн</span>
+    <span class="inline">Також інлайн</span>
+    
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+</body>
+</html>
